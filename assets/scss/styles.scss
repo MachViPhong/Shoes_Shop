@@ -3,19 +3,19 @@
 // ==========================================================================
 // Foundation
 // ==========================================================================
-@import "foundation/variables";
+@import "foundation/_variables";
 
 // ==========================================================================
 
 // Layouts
 // ==========================================================================
-@import "layouts/header";
-@import "layouts/footer";
+@import "layouts/_header";
+@import "layouts/_footer";
 
 // ==========================================================================
 
 // Pages
 // ==========================================================================
-@import "pages/index";
-@import "pages/detail";
-@import "pages/Register";
+@import "pages/_index";
+@import "pages/_detail";
+@import "pages/_Register";
