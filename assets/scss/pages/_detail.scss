@@ -1,8 +1,16 @@
 .navigation {
   .container-fluid {
     // max-width: 1200px;
-    padding: 0 2%;
+    padding-right: 4%;
     .menu {
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+      }
+
       a {
         text-decoration: none;
         @include text($texts-md-1, $textw-md-1, $text-c1-dark);
@@ -24,6 +32,64 @@
           left: 0;
           cursor: pointer;
           transition: width 0.5s;
+          @media screen and (max-width: 768px) {
+            bottom: 0;
+          }
+        }
+        &.Home {
+          &:hover {
+            &::after {
+              width: 70px;
+              @media screen and (max-width: 768px) {
+                left: 0;
+                width: 55px;
+              }
+            }
+          }
+        }
+        &.Men {
+          &:hover {
+            &::after {
+              width: 55px;
+              @media screen and (max-width: 768px) {
+                left: 0;
+                width: 40px;
+              }
+            }
+          }
+        }
+        &.Woman {
+          &:hover {
+            &::after {
+              width: 85px;
+              @media screen and (max-width: 768px) {
+                left: 0;
+                width: 70px;
+              }
+            }
+          }
+        }
+        &.Kid {
+          &:hover {
+            &::after {
+              width: 45px;
+              @media screen and (max-width: 768px) {
+                left: 0;
+                width: 30px;
+              }
+            }
+          }
+        }
+        &.Sport {
+          &:hover {
+            &::after {
+              width: 65px;
+              @media screen and (max-width: 768px) {
+                left: 0;
+                width: 50px;
+              }
+            }
+          }
         }
       }
     }
@@ -174,14 +240,13 @@
                 background-color: #e1b067;
                 padding: 18px 0;
                 @include text($texts-md-2, $textw-sm-1, $text-c1-dark);
-
               }
               .cost {
                 width: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #DEDDDC;
+                background-color: #dedddc;
                 padding: 18px 0;
                 @include text($texts-md-2, $textw-lg-1, $text-c1-dark);
               }
@@ -192,4 +257,3 @@
     }
   }
 }
-

@@ -278,7 +278,16 @@
   background-color: rgba(0, 0, 0, 0.025);
 }
 .navigation .container-fluid {
-  padding: 0 2%;
+  padding-right: 4%;
+}
+@media screen and (max-width: 768px) {
+  .navigation .container-fluid .menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+  }
 }
 .navigation .container-fluid .menu a {
   text-decoration: none;
@@ -302,6 +311,56 @@
   left: 0;
   cursor: pointer;
   transition: width 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .navigation .container-fluid .menu a::after {
+    bottom: 0;
+  }
+}
+.navigation .container-fluid .menu a.Home:hover::after {
+  width: 70px;
+}
+@media screen and (max-width: 768px) {
+  .navigation .container-fluid .menu a.Home:hover::after {
+    left: 0;
+    width: 55px;
+  }
+}
+.navigation .container-fluid .menu a.Men:hover::after {
+  width: 55px;
+}
+@media screen and (max-width: 768px) {
+  .navigation .container-fluid .menu a.Men:hover::after {
+    left: 0;
+    width: 40px;
+  }
+}
+.navigation .container-fluid .menu a.Woman:hover::after {
+  width: 85px;
+}
+@media screen and (max-width: 768px) {
+  .navigation .container-fluid .menu a.Woman:hover::after {
+    left: 0;
+    width: 70px;
+  }
+}
+.navigation .container-fluid .menu a.Kid:hover::after {
+  width: 45px;
+}
+@media screen and (max-width: 768px) {
+  .navigation .container-fluid .menu a.Kid:hover::after {
+    left: 0;
+    width: 30px;
+  }
+}
+.navigation .container-fluid .menu a.Sport:hover::after {
+  width: 65px;
+}
+@media screen and (max-width: 768px) {
+  .navigation .container-fluid .menu a.Sport:hover::after {
+    left: 0;
+    width: 50px;
+  }
 }
 
 .detail-product .container {
@@ -463,7 +522,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #DEDDDC;
+  background-color: #dedddc;
   padding: 18px 0;
   font-size: 24px;
   font-weight: 600;
