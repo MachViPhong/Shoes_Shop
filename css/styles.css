@@ -160,7 +160,7 @@
 
 .Carousel {
   margin-top: 5px;
-  background: url("../../img/image 6.png");
+  background-image: url("../../../assets/img/image 6.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
