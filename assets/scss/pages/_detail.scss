@@ -1,7 +1,7 @@
 .navigation {
   .container-fluid {
     // max-width: 1200px;
-    padding-right: 4%;
+    padding: 0 2%;
     .menu {
       @media screen and (max-width: 768px) {
         display: flex;
@@ -13,10 +13,12 @@
 
       a {
         text-decoration: none;
-        @include text($texts-md-1, $textw-md-1, $text-c1-dark);
+        @include text($texts-md-1, $textw-sm-2, $text-c1-dark);
         padding-right: 24px;
         position: relative;
+        transition: all 0.3s;
         &:hover {
+          @include text($texts-md-1, $textw-md-1, $text-c1-dark);
           &::after {
             width: 68%;
           }
