@@ -94,33 +94,26 @@
         <div class="row">
           <div class="col1 col-12 col-sm-12 col-md-12 col-lg-5">
             <div class="content">
-              <img src="./assets/img/image 5.png" alt="image 5" />
+              <img
+                id="product-img"
+                src="./assets/img/image 5.png"
+                alt="image 5"
+                class="w-100"
+              />
             </div>
           </div>
           <div class="col2 col-12 col-sm-12 col-md-12 col-lg-7">
             <div class="content">
-              <h2 class="title">Product name</h2>
-              <p class="descript">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores pariatur sequi esse ducimus veritatis aspernatur totam
-                inventore, tempore rem impedit illum qui a quae aperiam
-                officiis, error repellat sunt nulla! ( Thuộc tính Description)
-              </p>
+              <h2 class="title" id="product-name"></h2>
+              <p class="descript" id="product-desc"></p>
               <h3 class="state">Available size</h3>
-
-              <ul class="sizes">
-                <li class="btn-size">38</li>
-                <li class="btn-size">39</li>
-                <li class="btn-size">40</li>
-                <li class="btn-size">41</li>
-                <li class="btn-size">42</li>
-              </ul>
+              <ul class="sizes" id="product-size-list"></ul>
               <div class="price">
-                <p>85$</p>
+                <p id="product-price"></p>
               </div>
               <div class="count">
                 <div class="btn-plus"><span>+</span></div>
-                <div class="number"><span>1</span></div>
+                <div class="number" id="product-quantity"><span></span></div>
                 <div class="btn-minus"><span>-</span></div>
               </div>
               <div class="button">
@@ -138,107 +131,8 @@
         </div>
 
         <div class="products">
-          <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="product-item">
-                <div class="image">
-                  <img src="./assets/img/image 5.png" alt="image 5" />
-                </div>
-                <div class="detail">
-                  <h2 class="name">Adidas Prophere</h2>
-                  <p class="descript">short descript ...</p>
-                </div>
-    
-                <div class="prices">
-                  <div class="buy">Buy now</div>
-                  <div class="cost">85$</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="product-item">
-                <div class="image">
-                  <img src="./assets/img/image 5.png" alt="image 5" />
-                </div>
-                <div class="detail">
-                  <h2 class="name">Adidas Prophere</h2>
-                  <p class="descript">short descript ...</p>
-                </div>
-    
-                <div class="prices">
-                  <div class="buy">Buy now</div>
-                  <div class="cost">85$</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="product-item">
-                <div class="image">
-                  <img src="./assets/img/image 5.png" alt="image 5" />
-                </div>
-                <div class="detail">
-                  <h2 class="name">Adidas Prophere</h2>
-                  <p class="descript">short descript ...</p>
-                </div>
-    
-                <div class="prices">
-                  <div class="buy">Buy now</div>
-                  <div class="cost">85$</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="product-item">
-                <div class="image">
-                  <img src="./assets/img/image 5.png" alt="image 5" />
-                </div>
-                <div class="detail">
-                  <h2 class="name">Adidas Prophere</h2>
-                  <p class="descript">short descript ...</p>
-                </div>
-    
-                <div class="prices">
-                  <div class="buy">Buy now</div>
-                  <div class="cost">85$</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="product-item">
-                <div class="image">
-                  <img src="./assets/img/image 5.png" alt="image 5" />
-                </div>
-                <div class="detail">
-                  <h2 class="name">Adidas Prophere</h2>
-                  <p class="descript">short descript ...</p>
-                </div>
-    
-                <div class="prices">
-                  <div class="buy">Buy now</div>
-                  <div class="cost">85$</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="product-item">
-                <div class="image">
-                  <img src="./assets/img/image 5.png" alt="image 5" />
-                </div>
-                <div class="detail">
-                  <h2 class="name">Adidas Prophere</h2>
-                  <p class="descript">short descript ...</p>
-                </div>
-    
-                <div class="prices">
-                  <div class="buy">Buy now</div>
-                  <div class="cost">85$</div>
-                </div>
-              </div>
-            </div>
+          <div class="row" id="realate-list">
           </div>
-
-          
         </div>
       </div>
     </section>
@@ -337,5 +231,12 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+      integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/detail.js"></script>
   </body>
 </html>
