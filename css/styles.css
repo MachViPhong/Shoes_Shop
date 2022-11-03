@@ -67,6 +67,15 @@
     font-size: 14px;
   }
 }
+.header .container-fluid .register .sale .register-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+@media screen and (max-width: 550px) {
+  .header .container-fluid .register .sale .register-btn a {
+    font-size: 14px;
+  }
+}
 
 .footer {
   margin-top: 100px;
@@ -572,6 +581,7 @@
 .register .container .form-control .form-body .left-row .hasLined input {
   border: none;
   line-height: 36.31px;
+  width: 100%;
   font-size: 30px;
   font-weight: 400;
   color: #000000;
@@ -607,6 +617,7 @@
 .register .container .form-control .form-body .right-row .hasLined input {
   border: none;
   line-height: 36.31px;
+  width: 100%;
   font-size: 30px;
   font-weight: 400;
   color: #000000;

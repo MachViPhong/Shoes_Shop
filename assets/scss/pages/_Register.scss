@@ -31,6 +31,7 @@
             input {
               border: none;
               line-height: 36.31px;
+              width: 100%;
               @include text($texts-lg-2, $textw-md-1, $text-c1-dark);
               &:focus-visible {
                 // outline: none;
@@ -63,6 +64,7 @@
             input {
               border: none;
               line-height: 36.31px;
+              width: 100%;
               @include text($texts-lg-2, $textw-md-1, $text-c1-dark);
               &:focus-visible {
                 // outline: none;
