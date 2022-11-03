@@ -44,7 +44,7 @@
               <p class="number text-white">(1)</p>
             </div>
             <h5 class="login text-white">Login</h5>
-            <h5 class="register-btn">Register</h5>
+            <h5 class="register-btn"><a href="Register.html">Register</a></h5>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active Home" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active Home" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link Men" href="#">Men</a>
@@ -93,12 +93,12 @@
       <div class="container">
         <div class="form-control">
           <h3 class="form-title">Register</h3>
-          <section class="row form-body">
-            <div
-              class="input-control left-row col-12 col-sm-12 col-md-6 col-lg-6"
-            >
+          <section class="row form-body" id="form-register">
+            <div class="input-control left-row col-12 col-sm-12 col-md-6 col-lg-6">
               <div class="hasLined">
                 <input id="inputEmail" type="email" placeholder="email" />
+                <p class="text text-danger mt-2" id="err-required-email" style="display: none;"></p>
+                <p class="text text-danger mt-2" id="err-email" style="display: none;"></p>
               </div>
               <div class="hasLined">
                 <input
@@ -106,6 +106,7 @@
                   type="password"
                   placeholder="password"
                 />
+                <p class="text text-danger mt-2" id="err-required-pw" style="display: none;"></p>
               </div>
               <div class="hasLined">
                 <input
@@ -113,6 +114,8 @@
                   type="password"
                   placeholder="password confirm"
                 />
+                <p class="text text-danger mt-2" id="err-required-pwc" style="display: none;"></p>
+                <p class="text text-danger mt-2" id="err-match" style="display: none;"></p>
               </div>
             </div>
             <div
@@ -120,13 +123,16 @@
             >
               <div class="hasLined">
                 <input id="inputName" type="text" placeholder="name" />
+                <p class="text text-danger mt-2" id="err-required-name" style="display: none;"></p>
               </div>
               <div class="hasLined">
                 <input id="inputPhoneNumber" type="text" placeholder="phone" />
+                <p class="text text-danger mt-2" id="err-required-phone" style="display: none;"></p>
+                <p class="text text-danger mt-2" id="err-phone" style="display: none;"></p>
               </div>
               <div class="gender-details">
-                <input type="radio" name="gender" id="dot-1" />
-                <input type="radio" name="gender" id="dot-2" />
+                <input type="radio" name="gender" id="dot-1" value="1" checked />
+                <input type="radio" name="gender" id="dot-2" value="0" />
                 <span class="gender-title">Gender</span>
                 <div class="category">
                   <label for="dot-1">
@@ -139,7 +145,7 @@
                   </label>
                 </div>
               </div>
-              <button type="submit" class="btn-submit">Submit</button>
+              <button type="submit" class="btn-submit" id="btnAddUser">Submit</button>
             </div>
           </section>
         </div>
@@ -242,5 +248,15 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+      integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./util/Validation.js"></script>
+    <script src="./models/User.js"></script>
+    <script src="./controllers/register.js"></script>
+
   </body>
 </html>
