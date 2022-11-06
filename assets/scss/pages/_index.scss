@@ -133,3 +133,18 @@
     }
   }
 }
+.relate-product{
+  .container-fluid{
+    .products{
+      .row{
+        .product-item{
+          .prices{
+            a{
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
